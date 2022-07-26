@@ -11,12 +11,12 @@ server:
 ---
 spring:
   profiles:         # = {profile}
-    - dev           # spring-cloud-config-client sẽ gọi Uri = /app1/dev
+    - dev           # spring-cloud-config-client sẽ gọi Uri = /zone/app3/dev
 message: version for dev
 
 ---
 spring:
   profiles:         # = {profile}
-    - prod          # spring-cloud-config-client sẽ gọi Uri = /app1/prod
+    - prod          # spring-cloud-config-client sẽ gọi Uri = /zone/app3/prod
 message: version for product
 
