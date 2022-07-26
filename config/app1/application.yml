@@ -1,0 +1,22 @@
+# phần này ko khai báo spring.profiles nên là "default" profile
+# để ý cú pháp:  spring.cloud.config.server.native.searchlocations = /config/{application}/{profile}]
+# spring-cloud-config-client sẽ gọi  Uri = /app1/default
+spring:
+  application:
+    name: app1       # = {application}
+    version: 1.0
+server:
+  port: 8888
+
+---
+spring:
+  profiles:         # = {profile}
+    - dev           # spring-cloud-config-client sẽ gọi Uri = /app1/dev
+message: version for dev
+
+---
+spring:
+  profiles:         # = {profile}
+    - prod          # spring-cloud-config-client sẽ gọi Uri = /app1/prod
+message: version for product
+
