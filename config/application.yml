@@ -1,0 +1,13 @@
+# phần này ko khai báo spring.profiles nên là "default" profile
+# để ý cú pháp:  spring.cloud.config.server.native.searchlocations = /config/{application}/{profile}]
+# spring-cloud-config-client sẽ gọi  Uri = /app1/default
+spring:
+  application:
+    name: test-service       # = {application}
+    version: 1.0
+
+server:
+  port: 1111
+
+
+
