@@ -3,11 +3,20 @@
 # spring-cloud-config-client sẽ gọi  Uri = /app1/default
 spring:
   application:
-    name: test-service       # = {application}
+    name: app1       # = {application}
     version: 1.0
-
 server:
-  port: 1111
+  port: 8888
 
+---
+spring:
+  profiles:         # = {profile}
+    - dev           # spring-cloud-config-client sẽ gọi Uri = /app1/dev
+message: version for dev
 
+---
+spring:
+  profiles:         # = {profile}
+    - prod          # spring-cloud-config-client sẽ gọi Uri = /app1/prod
+message: version for product
 

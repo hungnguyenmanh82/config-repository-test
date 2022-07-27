@@ -1,0 +1,7 @@
+# dùng @ConfigurationProperties để map thông tin sau với JavaObject
+lib1:
+    param1: value1
+    param2: value2
+    comment: "dùng @ConfigurationProperties để map thông tin sau với JavaObject"
+
+
