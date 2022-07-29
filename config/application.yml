@@ -6,8 +6,12 @@ spring:
     name: app1       # = {application}
     version: 1.0
 server:
-  port: 8888
+  port: 8889
 
+myLib:
+    param1: value1
+    param2: value2
+    comment: "dùng @ConfigurationProperties để map thông tin sau với JavaObject"
 ---
 spring:
   profiles:         # = {profile}

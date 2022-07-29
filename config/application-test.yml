@@ -3,7 +3,7 @@
 # spring-cloud-config-client sẽ gọi  Uri = /app1/default
 spring:
   application:
-    name: app2       # = {application}
+    name: app2     # = {application}
     version: test_2.0
 server:
   port: 9999
